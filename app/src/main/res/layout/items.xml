@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+
+
+        <TextView
+            android:id="@+id/center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_medicine"
+            android:padding="4dp"
+            android:text="center:" />
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/ic_location"
+
+            android:drawablePadding="4dp"
+            android:text="Location:" />
+
+        <TextView
+            android:id="@+id/timing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+            android:text="Time:" />
+
+        <TextView
+            android:id="@+id/vaccine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timing"
+
+            android:layout_marginTop="3dp"
+            android:text="vaccine:" />
+
+        <TextView
+            android:id="@+id/fees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timing"
+            android:layout_toRightOf="@+id/vaccine"
+            android:text="fees" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vaccine"
+            android:text="Age:" />
+
+        <TextView
+            android:id="@+id/avail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vaccine"
+            android:layout_toRightOf="@+id/age"
+            android:text="Availiability:" />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
